@@ -1,38 +1,137 @@
-#wrapper{
-        margin: 0 auto;
-        background: #f7efe6;
-}
+
 
 body{
-    margin: 0 auto;
     background: #f7efe6;
     font-weight: 100;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+    color: #0b577a;
 }
 
 #grid{
     display: grid;
-    grid-template-columns: repeat(8,1fr);
-    grid-auto-rows: repeat(8,1fr);
-    max-width: 1400px;
-    margin: 0 auto;
-    grid-gap: 3px;
-    justify-items: center;
+    grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+    grid-auto-rows: minmax(12.5%, 150px);
+    max-width: 1500px;
+    margin: auto;
+    grid-gap: 10px;
     background: grey;
 
 }
 
+/************* 1st element- nested grid********/
+
+.nestedgrid1{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-auto-rows: minmax(5%, auto);
+    
+}
+
+.nestedone{
+    grid-column: 1/ 5;
+    justify-self: center;
+    padding: 0px;
+    background: black;
+}
+
+.nestedtwo{
+    grid-column: 1/ 3;
+    justify-self: center;
+    padding: 0px;
+    background: black;
+}
+
+.nestedtwo img{
+    max-width: 95%;
+    max-height: 70%;
+
+    
+}
+
+.nestedthree{
+    grid-column: 3/ 5;
+    justify-self: center;
+    padding: 0px;
+    background: black;
+}
+
+.nestedthree img{
+    max-width: 95%;
+    max-height: 70%;
+    
+}
+
+.nestedfour{
+    grid-column: 1/ 3;
+    justify-self: center;
+    padding: 0px;
+    background: black;
+}
+.nestedfour img{
+    max-width: 95%;
+    max-height: 70%;
+    
+}
+
+.nestedfive{
+    grid-column: 3/ 5;
+    justify-self: center;
+    padding: 0px;
+    background: black;
+}
+
+.nestedfive img{
+    max-width: 95%;
+    max-height: 70%;
+}
+
+
 .one{
-    grid-column: 1/ 2;
-    grid-row: 1/ 5;
+    grid-column: 1/ 3;
+    grid-row: 1/ 6;
+    background: pink;
 
 
 }
-
+/************* 1st element- nested grid********/
+/************* 2nd element********/
 .two{
-    grid-column: 2/ 9;
-    grid-row: 1/ 2;
-    background: blue;
+    grid-column: 3/ 9;
+    grid-row: 1/ 5;
+    background: lightgoldenrodyellow;
 
 }
+/************* 2nd element********/
+/************* 3rd element********/
+
+.three{
+    grid-column: 3/ 6;
+    grid-row: 3/ 6;
+    background: green;
+
+}
+/************* 3rd element********/
+/************* 4th element********/
+
+.four{
+    grid-column: 6/ 9;
+    grid-row: 3/ 8;
+    background: yellow;
+}
+/************* 4th element********/
+/************* 5th element********/
+
+.five{
+    grid-column: 1/ 6;
+    grid-row: 6/ 8;
+    background: red;
+}
+/************* 5th element********/
+/************* 6th element********/
+
+.six{
+    grid-column: 1/ 9;
+    grid-row: 8/ 9;
+    background: violet;
+}
+/************* 6th element********/
