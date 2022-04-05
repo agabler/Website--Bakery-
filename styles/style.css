@@ -3,18 +3,19 @@
 body{
     background: #f7efe6;
     font-weight: 100;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #0b577a;
 }
 
 #grid{
     display: grid;
-    grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+    grid-template-columns: repeat(8, 1fr);
     grid-auto-rows: minmax(12.5%, 150px);
     max-width: 1500px;
     margin: auto;
     grid-gap: 10px;
-    background: grey;
+    background: #f7efe6;
+    padding: 0px 2px 0px 2px;
 
 }
 
@@ -24,90 +25,183 @@ body{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-auto-rows: minmax(5%, auto);
+    padding: 3px;
+    background: #d9c7c9;
+    border-radius: 20px;
     
 }
 
-.nestedone{
+
+.nested1one{
     grid-column: 1/ 5;
     justify-self: center;
     padding: 0px;
-    background: black;
+    background:#d9c7c9;
 }
 
-.nestedtwo{
+.nested1two{
     grid-column: 1/ 3;
-    justify-self: center;
-    padding: 0px;
-    background: black;
+    text-align: center;
+    padding: 2px;
+    background: #d9c7c9;
+    /*border: 1px solid grey;*/
+    margin-right: 2px;
+    margin-bottom: 7px;
+    line-height: 0px;
 }
 
-.nestedtwo img{
-    max-width: 95%;
-    max-height: 70%;
-
+.nested1two img{
+    max-width: 100%;
+    max-height: 79%;
+    border: 3px solid #bab2a9;
     
 }
 
-.nestedthree{
+
+.nested1three{
     grid-column: 3/ 5;
-    justify-self: center;
-    padding: 0px;
-    background: black;
+    text-align: center;
+    padding: 3px;
+    background: #d9c7c9;
+    /*border: 2px solid #163840;*/
+    margin-left: 2px;
+    margin-bottom: 7px;
+    line-height: 0px;
 }
 
-.nestedthree img{
-    max-width: 95%;
-    max-height: 70%;
+.nested1three img{
+    max-width: 100%;
+    max-height: 79%;
+    border: 3px solid #bab2a9;
     
 }
 
-.nestedfour{
+.nested1four{
     grid-column: 1/ 3;
-    justify-self: center;
-    padding: 0px;
-    background: black;
+    text-align: center;
+    padding: 3px;
+    background: #d9c7c9;
+    /*border: 2px solid #163840;*/
+    margin-right: 2px;
+    line-height: 0px;
 }
-.nestedfour img{
-    max-width: 95%;
-    max-height: 70%;
+.nested1four img{
+    max-width: 100%;
+    max-height: 78%;
+    border: 3px solid #bab2a9;
     
 }
 
-.nestedfive{
+.nested1five{
     grid-column: 3/ 5;
-    justify-self: center;
-    padding: 0px;
-    background: black;
+    text-align: center;
+    padding: 3px;
+    background: #d9c7c9;
+    /*border: 2px solid #163840;*/
+    margin-left: 2px;
+    line-height: 0px;
 }
 
-.nestedfive img{
-    max-width: 95%;
-    max-height: 70%;
+.nested1five img{
+    max-width: 100%;
+    max-height: 76%;
+    border: 3px solid #bab2a9;
+}
+
+
+.nested1six{
+    grid-column: 1/ 5;
+    padding: 3px;
+    text-align: center;
+    line-height: 4px;
 }
 
 
 .one{
     grid-column: 1/ 3;
     grid-row: 1/ 6;
-    background: pink;
-
-
+    background: #f7efe6;
 }
+
+h2{
+    font-size: 28x;
+    font-weight: 600;
+    color: #034561;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h3{
+    font-size: 16px;
+    font-weight: 300;
+    
+}
+
+h4{
+    font-size: 14px;
+    font-weight: 100;
+    
+}
+
+a{
+    text-decoration: none;
+    color:#0b577a
+}
+
+a:hover{
+    background:  #c7bfb7;
+    color: #0b577a;
+    border-radius: 5px;
+}
+
+
 /************* 1st element- nested grid********/
+
 /************* 2nd element********/
 .two{
     grid-column: 3/ 9;
-    grid-row: 1/ 5;
-    background: lightgoldenrodyellow;
+    grid-row: 1/ 3;
+    background: #f7efe6;
+}
+
+.nestedgrid2{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
 
 }
+
+.nested2one{
+    grid-column: 2/ 3;
+    align-items: flex-end;
+    padding: 0em;
+}
+
+.nested2one img{
+    max-width: 70%;
+    max-height: 100%;
+}
+
+.nested2two{
+    padding-top: 13em;
+    padding-left: 0em;
+    align-items: end;
+    font-weight: 400;
+    letter-spacing: 0.5em;
+    color: #99731c;
+    max-width: 70%;
+    max-height: 20%;
+
+}
+
+
+
 /************* 2nd element********/
 /************* 3rd element********/
 
 .three{
     grid-column: 3/ 6;
     grid-row: 3/ 6;
-    background: green;
+    background: #f0ccde;
+    border-radius: 20px;
 
 }
 /************* 3rd element********/
@@ -116,7 +210,8 @@ body{
 .four{
     grid-column: 6/ 9;
     grid-row: 3/ 8;
-    background: yellow;
+    background:#ab9da4;
+    border-radius: 20px;
 }
 /************* 4th element********/
 /************* 5th element********/
@@ -124,7 +219,8 @@ body{
 .five{
     grid-column: 1/ 6;
     grid-row: 6/ 8;
-    background: red;
+    background: #e8d3dd;
+    border-radius: 20px;
 }
 /************* 5th element********/
 /************* 6th element********/
@@ -132,6 +228,7 @@ body{
 .six{
     grid-column: 1/ 9;
     grid-row: 8/ 9;
-    background: violet;
+    background: grey;
+    border-radius: 20px;
 }
 /************* 6th element********/
